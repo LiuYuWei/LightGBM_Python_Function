@@ -1,7 +1,7 @@
-# LightGBM_Python_Function
-Easily use lightGBM by function
-
 # Simon Liu 機器學習工作坊
+
+## LightGBM_Python_Function
+Easily use lightGBM by function
 
 ## 此次使用到的軟體：
 ### Python:
