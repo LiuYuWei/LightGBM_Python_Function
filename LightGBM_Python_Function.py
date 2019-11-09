@@ -15,7 +15,9 @@ from sklearn.metrics import accuracy_score,recall_score,precision_score,confusio
 
 import lightgbm as lgb
 
-def LightGBM(train_X, train_y, eval_X, eval_y, boosting_type = 'gbdt', objective = 'binary', num_leaves = 100,            learning_rate = 0.05, feature_fraction = 0.9, bagging_fraction = 0.8, bagging_freq = 10, verbose = 0,            num_boost = 300, early_stopping = 20):
+def LightGBM(train_X, train_y, eval_X, eval_y, boosting_type = 'gbdt', objective = 'binary', num_leaves = 100,
+             learning_rate = 0.05, feature_fraction = 0.9, bagging_fraction = 0.8, bagging_freq = 10, verbose = 0,
+             num_boost = 300, early_stopping = 20):
 
     lgb_train = lgb.Dataset(train_X, train_y)
     lgb_eval = lgb.Dataset(eval_X, eval_y, reference=lgb_train)
